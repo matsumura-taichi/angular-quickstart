@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<div>{{msg}}</div>`
+  template: `<div [innerHTML]="msg"></div>`
 })
 export class AppComponent  {
   msg: string = `<script>window.alert("ようこそ！");</script>
